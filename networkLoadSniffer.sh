@@ -25,7 +25,6 @@ do
 
         if [ $RMIBTS -gt $INCOMINGTRAFFIC ] || [ $RXPPS  -gt $INCOMINGTRAFFICPPS ]
         then 
-
                 tcpdump -n -i $NETWORKINTERFACE -c $NUMBEROFPACKETS -w $RMIBTS-Mibt-$RXPPS-PPS-$CURRENTDATE.pcap
                 sleep $DELAYAFTERIMACT
         fi
