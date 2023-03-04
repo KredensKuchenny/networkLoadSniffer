@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if screen -list | grep -q networkLoadSniffer;
+then
+        sleep 0.3
+else
+        bash run
+fi
